@@ -33,11 +33,11 @@ function onGallery(event) {
 `);
 
     instance.show();
-    // event.addEventListener("keydown", (event) => {
-    //     if (event.code === "Escape") {
-    //         instance.close();
-    //     }
-    // });
+    window.addEventListener("keydown", (event) => {
+        if (event.code === "Escape") {
+            instance.close();
+        }
+    });
 }
 galleryRef.addEventListener("click", onGallery);
 
